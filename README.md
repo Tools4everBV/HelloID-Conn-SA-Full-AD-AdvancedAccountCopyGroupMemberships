@@ -1,5 +1,3 @@
-# HelloID-Conn-SA-Full-AD-AdvancedAccountCopyGroupMemberships
-HelloID Delegated Form for AD Account advanced copy groupmemberships based on user attributes
 <!-- Description -->
 ## Description
 This HelloID Service Automation Delegated Form provides advanced AD user copy groupmembership functionality. The following options are available:
