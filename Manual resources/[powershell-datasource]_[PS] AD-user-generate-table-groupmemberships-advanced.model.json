@@ -1,0 +1,18 @@
+[
+    {
+        "key":  "name",
+        "type":  0
+    },
+    {
+        "key":  "counter",
+        "type":  0
+    },
+    {
+        "key":  "display",
+        "type":  0
+    },
+    {
+        "key":  "percentage",
+        "type":  0
+    }
+]

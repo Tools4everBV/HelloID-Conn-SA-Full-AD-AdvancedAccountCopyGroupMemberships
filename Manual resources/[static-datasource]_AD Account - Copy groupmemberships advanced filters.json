@@ -1,0 +1,17 @@
+[
+    {
+        "name":  "Company",
+        "value":  "company",
+        "selected":  0
+    },
+    {
+        "name":  "Department",
+        "value":  "department",
+        "selected":  0
+    },
+    {
+        "name":  "Jobtitle",
+        "value":  "title",
+        "selected":  1
+    }
+]

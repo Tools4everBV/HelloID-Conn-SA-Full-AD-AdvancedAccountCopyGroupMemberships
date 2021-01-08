@@ -1,0 +1,42 @@
+[
+    {
+        "description":  null,
+        "translateDescription":  false,
+        "inputFieldType":  1,
+        "key":  "selectedUser",
+        "type":  0,
+        "options":  1
+    },
+    {
+        "description":  null,
+        "translateDescription":  false,
+        "inputFieldType":  1,
+        "key":  "minPercentage",
+        "type":  0,
+        "options":  1
+    },
+    {
+        "description":  null,
+        "translateDescription":  false,
+        "inputFieldType":  1,
+        "key":  "orderBy",
+        "type":  0,
+        "options":  1
+    },
+    {
+        "description":  null,
+        "translateDescription":  false,
+        "inputFieldType":  1,
+        "key":  "orderType",
+        "type":  0,
+        "options":  1
+    },
+    {
+        "description":  null,
+        "translateDescription":  false,
+        "inputFieldType":  1,
+        "key":  "filterAttributes",
+        "type":  0,
+        "options":  1
+    }
+]

@@ -1,0 +1,311 @@
+[
+    {
+        "label":  "Target user account",
+        "fields":  [
+                       {
+                           "key":  "searchfield",
+                           "templateOptions":  {
+                                                   "label":  "Search target user account",
+                                                   "placeholder":  "Username or email address"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Hide element",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "gridUsersTarget",
+                           "templateOptions":  {
+                                                   "label":  "Select target user account",
+                                                   "required":  true,
+                                                   "grid":  {
+                                                                "columns":  [
+                                                                                {
+                                                                                    "headerName":  "DisplayName",
+                                                                                    "field":  "displayName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "UserPrincipalName",
+                                                                                    "field":  "UserPrincipalName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Company",
+                                                                                    "field":  "Company"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Department",
+                                                                                    "field":  "Department"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Title",
+                                                                                    "field":  "Title"
+                                                                                }
+                                                                            ],
+                                                                "height":  300,
+                                                                "rowSelection":  "single"
+                                                            },
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_0",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+                                                                                                                 {
+                                                                                                                     "propertyName":  "searchUser",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "searchfield"
+                                                                                                                                         }
+                                                                                                                 }
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "useFilter":  false
+                                               },
+                           "type":  "grid",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true
+                       }
+                   ]
+    },
+    {
+        "label":  "Memberships",
+        "fields":  [
+                       {
+                           "key":  "gridDetails",
+                           "templateOptions":  {
+                                                   "label":  "Basic attributes target user",
+                                                   "required":  false,
+                                                   "grid":  {
+                                                                "columns":  [
+                                                                                {
+                                                                                    "headerName":  "Name",
+                                                                                    "field":  "name"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Value",
+                                                                                    "field":  "value"
+                                                                                }
+                                                                            ],
+                                                                "height":  350,
+                                                                "rowSelection":  "single"
+                                                            },
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_1",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+                                                                                                                 {
+                                                                                                                     "propertyName":  "selectedUser",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "gridUsersTarget"
+                                                                                                                                         }
+                                                                                                                 }
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "useFilter":  false
+                                               },
+                           "type":  "grid",
+                           "summaryVisibility":  "Hide element",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "filterAttributes",
+                           "templateOptions":  {
+                                                   "label":  "Find common groupmemberships based on following user attributes",
+                                                   "useObjects":  true,
+                                                   "useFilter":  false,
+                                                   "options":  [
+                                                                   {
+                                                                       "value":  "company",
+                                                                       "text":  "Company"
+                                                                   },
+                                                                   {
+                                                                       "value":  "department",
+                                                                       "text":  "Department"
+                                                                   },
+                                                                   {
+                                                                       "value":  "title",
+                                                                       "text":  "Jobtitle"
+                                                                   }
+                                                               ],
+                                                   "required":  true,
+                                                   "useDataSource":  true,
+                                                   "valueField":  "value",
+                                                   "textField":  "name",
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_2",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "useDefault":  true,
+                                                   "defaultSelectorProperty":  "selected"
+                                               },
+                           "type":  "multiselect",
+                           "summaryVisibility":  "Show",
+                           "textOrLabel":  "text",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "formRow",
+                           "templateOptions":  {
+
+                                               },
+                           "fieldGroup":  [
+                                              {
+                                                  "key":  "orderby",
+                                                  "templateOptions":  {
+                                                                          "label":  "Order results by",
+                                                                          "useObjects":  true,
+                                                                          "options":  [
+                                                                                          {
+                                                                                              "value":  "percentage",
+                                                                                              "label":  "Percentage"
+                                                                                          },
+                                                                                          {
+                                                                                              "value":  "name",
+                                                                                              "label":  "Group name"
+                                                                                          }
+                                                                                      ],
+                                                                          "required":  true
+                                                                      },
+                                                  "type":  "radio",
+                                                  "defaultValue":  "percentage",
+                                                  "summaryVisibility":  "Show",
+                                                  "textOrLabel":  "label",
+                                                  "requiresTemplateOptions":  true
+                                              },
+                                              {
+                                                  "key":  "orderType",
+                                                  "templateOptions":  {
+                                                                          "label":  "Order type",
+                                                                          "useObjects":  true,
+                                                                          "options":  [
+                                                                                          {
+                                                                                              "value":  "Ascending",
+                                                                                              "label":  "Ascending"
+                                                                                          },
+                                                                                          {
+                                                                                              "value":  "Descending",
+                                                                                              "label":  "Descending"
+                                                                                          }
+                                                                                      ],
+                                                                          "required":  true
+                                                                      },
+                                                  "type":  "radio",
+                                                  "defaultValue":  "Descending",
+                                                  "summaryVisibility":  "Show",
+                                                  "textOrLabel":  "label",
+                                                  "requiresTemplateOptions":  true
+                                              },
+                                              {
+                                                  "key":  "minPercentage",
+                                                  "templateOptions":  {
+                                                                          "label":  "Minimal percentage",
+                                                                          "required":  true,
+                                                                          "min":  0,
+                                                                          "max":  100
+                                                                      },
+                                                  "type":  "number",
+                                                  "defaultValue":  "0",
+                                                  "summaryVisibility":  "Show",
+                                                  "requiresTemplateOptions":  true
+                                              }
+                                          ],
+                           "type":  "formrow",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "memberships",
+                           "templateOptions":  {
+                                                   "label":  "Memberships",
+                                                   "required":  false,
+                                                   "filterable":  true,
+                                                   "useDataSource":  true,
+                                                   "dualList":  {
+                                                                    "options":  [
+                                                                                    {
+                                                                                        "guid":  "75ea2890-88f8-4851-b202-626123054e14",
+                                                                                        "Name":  "Apple"
+                                                                                    },
+                                                                                    {
+                                                                                        "guid":  "0607270d-83e2-4574-9894-0b70011b663f",
+                                                                                        "Name":  "Pear"
+                                                                                    },
+                                                                                    {
+                                                                                        "guid":  "1ef6fe01-3095-4614-a6db-7c8cd416ae3b",
+                                                                                        "Name":  "Orange"
+                                                                                    }
+                                                                                ],
+                                                                    "optionKeyProperty":  "name",
+                                                                    "optionDisplayProperty":  "display",
+                                                                    "labelLeft":  "Available groups based on user attribute filter",
+                                                                    "labelRight":  "Already member of"
+                                                                },
+                                                   "useFilter":  false,
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_3",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+                                                                                                                 {
+                                                                                                                     "propertyName":  "selectedUser",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "gridUsersTarget"
+                                                                                                                                         }
+                                                                                                                 },
+                                                                                                                 {
+                                                                                                                     "propertyName":  "minPercentage",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "minPercentage"
+                                                                                                                                         }
+                                                                                                                 },
+                                                                                                                 {
+                                                                                                                     "propertyName":  "orderBy",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "orderby"
+                                                                                                                                         }
+                                                                                                                 },
+                                                                                                                 {
+                                                                                                                     "propertyName":  "orderType",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "orderType"
+                                                                                                                                         }
+                                                                                                                 },
+                                                                                                                 {
+                                                                                                                     "propertyName":  "filterAttributes",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "filterAttributes"
+                                                                                                                                         }
+                                                                                                                 }
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "destinationDataSourceConfig":  {
+                                                                                       "dataSourceGuid":  "$dataSourceGuid_4",
+                                                                                       "input":  {
+                                                                                                     "propertyInputs":  [
+                                                                                                                            {
+                                                                                                                                "propertyName":  "selectedUser",
+                                                                                                                                "otherFieldValue":  {
+                                                                                                                                                        "otherFieldKey":  "gridUsersTarget"
+                                                                                                                                                    }
+                                                                                                                            }
+                                                                                                                        ]
+                                                                                                 }
+                                                                                   }
+                                               },
+                           "type":  "duallist",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "templateOptions":  {
+
+                                               },
+                           "type":  "markdown",
+                           "summaryVisibility":  "Show",
+                           "body":  "*Please note that the execution script only adds new group memberships and does not remove group memberships*",
+                           "requiresTemplateOptions":  false
+                       }
+                   ]
+    }
+]
