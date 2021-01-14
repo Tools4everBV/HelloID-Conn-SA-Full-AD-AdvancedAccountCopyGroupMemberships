@@ -359,7 +359,7 @@ $tmpInput = @'
 [{"description":null,"translateDescription":false,"inputFieldType":1,"key":"selectedUser","type":0,"options":1},{"description":null,"translateDescription":false,"inputFieldType":1,"key":"minPercentage","type":0,"options":1},{"description":null,"translateDescription":false,"inputFieldType":1,"key":"orderBy","type":0,"options":1},{"description":null,"translateDescription":false,"inputFieldType":1,"key":"orderType","type":0,"options":1},{"description":null,"translateDescription":false,"inputFieldType":1,"key":"filterAttributes","type":0,"options":1}]
 '@ 
 $dataSourceGuid_3 = [PSCustomObject]@{} 
-Invoke-HelloIDDatasource -DatasourceName "[PS] AD-group-generate-table-copy-groupmemberships-advanced" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript -$tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_3) 
+Invoke-HelloIDDatasource -DatasourceName "[PS] AD-group-generate-table-copy-groupmemberships-advanced" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript $tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_3) 
 <# End: DataSource "[PS] AD-group-generate-table-copy-groupmemberships-advanced" #>
 
 <# Begin: DataSource "[PS]  AD-user-generate-table-attributes-basic" #>
@@ -389,7 +389,7 @@ $tmpInput = @'
 {"description":null,"translateDescription":false,"inputFieldType":1,"key":"selectedUser","type":0,"options":1}
 '@ 
 $dataSourceGuid_1 = [PSCustomObject]@{} 
-Invoke-HelloIDDatasource -DatasourceName "[PS]  AD-user-generate-table-attributes-basic" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript -$tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_1) 
+Invoke-HelloIDDatasource -DatasourceName "[PS]  AD-user-generate-table-attributes-basic" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript $tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_1) 
 <# End: DataSource "[PS]  AD-user-generate-table-attributes-basic" #>
 
 <# Begin: DataSource "AD Account - Copy groupmemberships advanced filters" #>
@@ -439,7 +439,7 @@ $tmpInput = @'
 {"description":null,"translateDescription":false,"inputFieldType":1,"key":"selectedUser","type":0,"options":1}
 '@ 
 $dataSourceGuid_4 = [PSCustomObject]@{} 
-Invoke-HelloIDDatasource -DatasourceName "[PS] AD-user-generate-table-groupmemberships-advanced" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript -$tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_4) 
+Invoke-HelloIDDatasource -DatasourceName "[PS] AD-user-generate-table-groupmemberships-advanced" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript $tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_4) 
 <# End: DataSource "[PS] AD-user-generate-table-groupmemberships-advanced" #>
 
 <# Begin: DataSource "[PS] AD-user-generate-table-wildcard" #>
@@ -484,7 +484,7 @@ $tmpInput = @'
 {"description":null,"translateDescription":false,"inputFieldType":1,"key":"searchUser","type":0,"options":1}
 '@ 
 $dataSourceGuid_0 = [PSCustomObject]@{} 
-Invoke-HelloIDDatasource -DatasourceName "[PS] AD-user-generate-table-wildcard" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript -$tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_0) 
+Invoke-HelloIDDatasource -DatasourceName "[PS] AD-user-generate-table-wildcard" -DatasourceType "4" -DatasourceInput $tmpInput -DatasourcePsScript $tmpPsScript -DatasourceModel $tmpModel -returnObject ([Ref]$dataSourceGuid_0) 
 <# End: DataSource "[PS] AD-user-generate-table-wildcard" #>
 <# End: HelloID Data sources #>
 
