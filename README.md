@@ -37,19 +37,19 @@ After the all-in-one PowerShell script has run and created all the required reso
 ## Manual resources
 This Delegated Form uses the following resources in order to run
 
-### Powershell data source '[PS] AD-user-generate-table-wildcard'
+### Powershell data source '[PS] AD-user-generate-table-wildcard-advanced-copy-groupmemberships'
 This Powershell data source runs an Active Directory query to search for matching AD user accounts. It uses an array of Active Directory OU's specified as HelloID user defined variable named _"ADusersSearchOU"_ to specify the search scope.
 
-### Powershell data source 'AD-user-generate-table-attributes-basic'
+### Powershell data source 'AD-user-generate-table-attributes-basic-advanced-copy-groupmemberships'
 This Powershell data source runs an Active Directory query to select a list of basic user attributes of the selected AD user account.  
 
-### Static data source 'AD Account - Copy groupmemberships advanced filters'
+### Static data source 'AD-user-generate-table-filters-advanced-copy-groupmemberships'
 This static data source provides the list of possible filters for the common AD groupmemberships.  
 
-### Powershell data source '[PS] AD-group-generate-table-copy-groupmemberships-advanced'
+### Powershell data source '[PS] AD-group-generate-table-advanced-copy-groupmemberships'
 This Powershell data source runs an Active Directory query to receive the list of common groupmemberships based on the provided user attribute filters.
 
-### Powershell data source '[PS] AD-user-generate-table-groupmemberships-advanced'
+### Powershell data source '[PS] AD-user-generate-table-advanced-copy-groupmemberships'
 This Powershell data source runs an Active Directory query to receive the list of current groupmemberships based on the selected target AD user account.
 
 ### Delegated form task 'AD-user-set-groupmemberships'
