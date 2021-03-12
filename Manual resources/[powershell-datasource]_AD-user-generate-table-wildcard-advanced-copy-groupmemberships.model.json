@@ -1,14 +1,10 @@
 [
     {
-        "key":  "Department",
-        "type":  0
-    },
-    {
         "key":  "Description",
         "type":  0
     },
     {
-        "key":  "Company",
+        "key":  "SamAccountName",
         "type":  0
     },
     {
@@ -16,11 +12,15 @@
         "type":  0
     },
     {
-        "key":  "displayName",
+        "key":  "Company",
         "type":  0
     },
     {
-        "key":  "SamAccountName",
+        "key":  "Department",
+        "type":  0
+    },
+    {
+        "key":  "displayName",
         "type":  0
     },
     {
