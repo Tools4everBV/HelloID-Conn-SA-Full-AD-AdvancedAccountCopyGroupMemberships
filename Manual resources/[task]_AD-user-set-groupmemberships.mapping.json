@@ -1,0 +1,10 @@
+[
+    {
+        "name":  "groupsToAdd",
+        "value":  "{{form.memberships.leftToRight.toJsonString}}"
+    },
+    {
+        "name":  "userPrincipalName",
+        "value":  "{{form.gridUsersTarget.UserPrincipalName}}"
+    }
+]
