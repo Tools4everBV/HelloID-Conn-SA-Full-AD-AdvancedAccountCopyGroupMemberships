@@ -54,3 +54,6 @@ This Powershell data source runs an Active Directory query to receive the list o
 
 ### Delegated form task 'AD-user-set-groupmemberships'
 This delegated form task will add new AD groupmemberships for the selected target AD user account based on the modifications in the Delegated Form. This task will only add new groupmemberships and does not remove current groupmemberships.
+
+# HelloID Docs
+The official HelloID documentation can be found at: https://docs.helloid.com/
