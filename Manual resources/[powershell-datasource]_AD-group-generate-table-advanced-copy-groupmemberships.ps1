@@ -79,5 +79,5 @@ try {
         }
     }
 } catch {
-    Write-Error "Error searching for AD groups. Error: $($_.Exception.Message)" -Event Error
+    Write-Error "Error searching for AD groups. Error: $($_.Exception.Message)"
 }
