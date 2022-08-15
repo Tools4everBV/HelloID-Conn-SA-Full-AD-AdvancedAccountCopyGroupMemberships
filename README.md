@@ -10,6 +10,7 @@ This HelloID Service Automation Delegated Form provides advanced AD user copy gr
 ## Versioning
 | Version | Description | Date |
 | - | - | - |
+| 1.0.2   | Added version number and updated code for SA-agent and auditlogging | 2022/08/03  |
 | 1.0.1   | Added version number and updated all-in-one script | 2021/10/27  |
 | 1.0.0   | Initial release | 2021/01/08  |
 
@@ -59,7 +60,7 @@ This Powershell data source runs an Active Directory query to receive the list o
 ### Powershell data source '[PS] AD-user-generate-table-advanced-copy-groupmemberships'
 This Powershell data source runs an Active Directory query to receive the list of current groupmemberships based on the selected target AD user account.
 
-### Delegated form task 'AD-user-set-groupmemberships'
+### Delegated form task 'AD Account - Advanced copy groupmemberships'
 This delegated form task will add new AD groupmemberships for the selected target AD user account based on the modifications in the Delegated Form. This task will only add new groupmemberships and does not remove current groupmemberships.
 
 ## Getting help
